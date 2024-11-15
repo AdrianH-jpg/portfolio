@@ -26,3 +26,15 @@
 .navbar a:hover {
   text-decoration: underline;
 }
+
+.icon-container {
+  margin-bottom: 20px;
+}
+
+.profile-icon {
+  width: 50px; /* Ajusta el tamaño a tu preferencia */
+  height: 50px; /* Debe ser igual al ancho para que sea un círculo */
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
+  border: 2px, solid,#ffffff;
+}

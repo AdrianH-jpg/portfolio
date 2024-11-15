@@ -1,0 +1,103 @@
+form {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #9cdcfe; /* Azul claro similar al de las propiedades JSON */
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    background-color: #252526;
+    color: #dcdcdc;
+    border: 1px solid #3c3c3c;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  form input[type="submit"] {
+    background-color: #007acc; /* Azul oscuro */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.3s;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #005f99;
+  }
+  
+  form textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .status-message {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .status-message.success {
+    background-color: #4CAF50; /* Verde para éxito */
+  }
+  
+  .status-message.error {
+    background-color: #f44336; /* Rojo para error */
+  }
+  
+  .status-message.show {
+    display: flex; /* Muestra el div solo cuando hay un mensaje */
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 10px; /* Ajusta este valor según el espaciado deseado */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    margin-top: 20px; /* Espacio adicional superior si es necesario */
+  }
+  
+  .social-links svg {
+    width: 40px; /* Ajusta el tamaño del ícono según prefieras */
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links svg:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+  }
+  

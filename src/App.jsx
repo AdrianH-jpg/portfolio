@@ -2,10 +2,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from './components/Homepage';
 import AboutPage from './components/AboutPage';
 import ProjectsPage from './components/ProjectsPage';
-import ContactPage from './components/ContactPage';
+import ContactPage from './components/ContactUs';
 import ResumePage from './components/ResumePage';
 import NavBar from './components/NavBar';
 import './App.css'; // Asegúrate de importar el CSS
+
 
 function App() {
   return (

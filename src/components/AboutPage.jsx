@@ -8,7 +8,7 @@ const AboutPage = () => {
         "Full Stack Bootcamp",
         "Backend Course with Java, and Spring Boot"
       ],
-      workExperience: "6 years as a robotics teacher"
+      workExperience: ["6 years as a robotics teacher", "6 months as a Programer intern"]
     },
     technicalSkills: {
       programmingLanguages: ["Java", "C#"],
