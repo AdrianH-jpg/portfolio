@@ -1,4 +1,5 @@
 .navbar {
+  font-family: 'Courier New', Courier, monospace;
   width: 220px;
   background-color: #2c2c2c;
   color: #fff;
@@ -6,6 +7,7 @@
   position: fixed;
   height: 100%;
   box-sizing: border-box;
+  
 }
 
 .navbar ul {
@@ -14,13 +16,16 @@
 }
 
 .navbar li {
-  margin-bottom: 15px;
+
+  margin-bottom: 10px;
 }
 
 .navbar a {
+  font-weight: bolder;
   color: #fff;
-  text-decoration: none;
-  font-size: 18px;
+  text-decoration:none;
+  font-size: 1.5rem;
+
 }
 
 .navbar a:hover {

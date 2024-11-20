@@ -57,35 +57,37 @@ const ContactUs= () => {
   };
 
     return(
-        <div className="contact-page">
-            <form ref={refForm} action='' onSubmit={handleSubmit}>
-                <label >Name</label>
-                <input type="text" name="user_name" required  />
-                <label >Subjet</label>
-                <input type="text" name="subject" required  />
-                <label>Email</label>
-                <input type="email" name="user_email" required  />
-                <label>Message</label>
-                <textarea name="message" required />
-                <input type="submit" value="Send" />
-            </form>
-            {statusMessage.text && (
-                 <div className={`status-message ${statusMessage.isSuccess ? 'success show' : 'error show'}`}>
-                 {statusMessage.text}
-                 <button  onClick={closeStatusMessage} className="close-button">X</button>
-               </div>
-            )}
-            <div className="social-links">
-                <svg 
-                onClick={() => handleNavigation('https://www.linkedin.com/in/adrian-hahn/')}
-                style={{ cursor: 'pointer' }}><Linkedin/></svg>
-                <svg onClick={() => handleNavigation('https://www.github.com/AdrianH-jpg')}
-                style={{ cursor: 'pointer' }}><GitHub/></svg>
-                <svg onClick={() => handleNavigation('https://x.com/Adrian_Darioo')}
-                style={{ cursor: 'pointer' }}><X/></svg>
-                <svg onClick={copyToClipboard} style={{ cursor: 'pointer' }}><Gmail/></svg>
+        <section id='contact' className="contact-page">
+          <div className='form'>
+              <form ref={refForm} action='' onSubmit={handleSubmit}>
+                  <label >Name</label>
+                  <input type="text" name="user_name" required  />
+                  <label >Subjet</label>
+                  <input type="text" name="subject" required  />
+                  <label>Email</label>
+                  <input type="email" name="user_email" required  />
+                  <label>Message</label>
+                  <textarea name="message" required />
+                  <input type="submit" value="Send" />
+              </form>
+              {statusMessage.text && (
+                  <div className={`status-message ${statusMessage.isSuccess ? 'success show' : 'error show'}`}>
+                  {statusMessage.text}
+                  <button  onClick={closeStatusMessage} className="close-button">X</button>
+                </div>
+              )}
+              <div className="social-links">
+                  <svg 
+                  onClick={() => handleNavigation('https://www.linkedin.com/in/adrian-hahn/')}
+                  style={{ cursor: 'pointer' }}><Linkedin/></svg>
+                  <svg onClick={() => handleNavigation('https://www.github.com/AdrianH-jpg')}
+                  style={{ cursor: 'pointer' }}><GitHub/></svg>
+                  <svg onClick={() => handleNavigation('https://x.com/Adrian_Darioo')}
+                  style={{ cursor: 'pointer' }}><X/></svg>
+                  <svg onClick={copyToClipboard} style={{ cursor: 'pointer' }}><Gmail/></svg>
+              </div>
             </div>
-        </div>
+        </section>
     );
 };
 export default ContactUs;

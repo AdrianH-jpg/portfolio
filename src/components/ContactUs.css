@@ -7,6 +7,8 @@ form {
     max-width: 500px;
     margin: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+
   }
   
   form label {
@@ -100,4 +102,57 @@ form {
   .social-links svg:hover {
     transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
   }
+
+
+/* Para reutilizar estilos */
+.home-page , .contac-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1e1e1e; /* Fondo consistente */
+  color: #dcdcdc; /* Color de texto */
+}
+
+.form {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.form h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
   
+.form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #9cdcfe; /* Azul claro para el título */
+}
+
+.form p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.form button {
+  background-color: #007acc;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #005f99;
+}
